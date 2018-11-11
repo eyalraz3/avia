@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html >
+    
+    <head>
+        <title>אביה בגדי מעצבים</title>
+        <!--Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eyal Raz">
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="product.js"></script>
+    </head>
+    <body dir="rtl">
+       
+        <section class="main-section">
+<header>
+    <a target="main-frame" href="index.html"><img   alt= "Logo" src="img/logo.jpg"  height="150" id="logo"></a>
+</header>
+        <nav>
+        <div class="navbar">
+          <div class="dropdown">
+    <a  target="main-frame" method="get" href="index.html" class="dropbtn"> דף הבית
+    </a>
+          </div>
+ <div class="dropdown">
+     <a  href="product.html" target="main-frame" class="dropbtn"> מוצרים 
+    </a>
+
+    <div class="dropdown-content">
+      <a target="main-frame" href="product.html">בגדי מעצבים</a>
+      <a target="main-frame" href="product.html">מטפחות</a>
+      <a target="main-frame" href="product.html">בגדי בסיס</a>
+    </div>
+      </div>
+  <div class="dropdown">
+    <a target="main-frame" href="http://www.ynet.co.il" class="dropbtn">אקססוריז 
+    </a>
+    <div class="dropdown-content">
+      <a target="main-frame" href="#">כיסויי ראש</a>
+      <a target="main-frame" href="#">ביגוד נוסף</a>
+      <a target="main-frame" href="#">תכשיטים</a>
+    </div>
+      
+  </div> 
+              <div class="dropdown">
+    <a target="main-frame" href="#" class="dropbtn">אודות 
+      
+    </a>
+     
+  </div>
+</div>
+        </nav>
+       
+       <!-- <div class="iframe-container">
+
+        </div>-->
+            <iframe name="main-frame" src=index.html id="main_frame"></iframe>
+    <footer id="fixed-div">
+          <a href="tel:+97254-7493523">
+            <img id="call_img" src="img/call.png" alt="התקשר" class="fixed-img"/>
+           </a>     
+           <a href="https://www.waze.com/ul?ll=32.19889344%2C35.01098156&navigate=yes&zoom=17">
+            <img id="navigate_img" src="img/waze_logo.png" alt="נווט" class="fixed-img"/>
+           </a>  
+    </footer>
+            <footer id="bottom-div">
+              <div class="bottom-divs" id="bottom-div1">
+                 <ul>
+                     <li><a href="#"> דף הבית</a></li>
+                     <li><a href="#"> אודות</a></li>
+                     <li><a href="#"> דף הפייסבוק שלנו</a></li>
+                     <li><a href="#"> צור קשר</a></li>
+                     <div class="fb-like" data-href="https://www.facebook.com/aviafashion" data-width="50" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+
+                 </ul>
+
+              </div>
+                </div>
+                <div class="bottom-divs" id="bottom-div2">
+                    <ul>
+                        <li><a href="#"> הספקים שלנו</a></li>
+                        <li><a href="#"> ועוד</a></li>
+                        <li><a href="#"> דף הפייסבוק שלנו</a></li>
+                        <li><a href="#"> צור קשר</a></li>
+
+                    </ul>
+                </div>
+                <div class="bottom-divs" id="bottom-div3">
+                    <form action="#" method="post" id="newsletter-validate-detail-footer" class="newsletter-form">
+                        <div class="block-content subscribe-footer">
+                            <div class="input-box">
+                                <input type="text" name="email" id="newsletter" placeholder="כתובת מייל" title="כתובת מייל" class="input-text required-entry validate-email subscribe-mail">
+                                <button type="submit" title="הרשמה" class="button">
+                                    <span><span>הרשמה</span></span>
+                                </button>
+                            </div>
+                            <div class="newsletter-subscribe-checkbox" hidden>
+                                <label for="confirm">
+                                    <div class="checkbox-newsletter cu-forms-custom-parent">
+                                        <div class="cu-forms-custom-over cu-forms-checkbox cu-forms-active" style="width: 20px; height: 20px; top: 0px; left: 316px;"></div><input type="checkbox" name="newsletter-subscribe-checkbox" title="newsletter_subscribe_checkbox" value="1" id="confirm" class="checkbox required-entry cuform cu-forms-custom-element cuform-loaded" checked="checked" style="opacity: 0;">
+                                    </div>
+                                    ברצוני לקבל מידע ופרסומות על הנחות וקולקציות חדשות, ואני מסכימה ל <a href="#conditions" target="_blank">תנאי השימוש </a>            </label>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+
+            </footer>
+        
+        </section>
+    </body>
+    <script>
+putSrcTo("main_frame")
+    </script>
+</html>

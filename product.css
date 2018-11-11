@@ -1,0 +1,19 @@
+#frame_content{
+    position: relative;
+    width: 100%;
+    display: grid;
+
+
+    grid-template-areas:
+"top1 top1 top2"
+    "center1 center2 center3"
+    "center1 bottom2 bottom2"
+
+;
+}
+#myimage{
+    grid-area: center1;
+}
+h1{
+    grid-area: top1;
+}
