@@ -51,6 +51,25 @@ header{
     margin-bottom:0;
 
 }
+#search{
+position: relative;
+    left: 0;
+
+
+}
+#search-button{
+    background: none;
+    padding: 0;
+    border: 0;
+}
+#search-img{
+    height: 30px;
+}
+#search-input{
+    height: 40px;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+}
 .fb-like{
     position: relative;
     display: inline-block;
@@ -154,7 +173,7 @@ footer#fixed-div{
  position: fixed;
  bottom: 0;
  width: 100%;
- z-index: 0;
+ z-index: 1;
 
 }
 #bottom-div{

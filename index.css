@@ -54,14 +54,10 @@ a:hover#anchor-button, a:active#anchor-button {
     background-color: var(--color3);
 }
 #txt-on-pic {
-
       right: 10%;
       position: relative;
     bottom: 70%;
-
-
     grid-area: six;
-    position: relative;
 }
 .pic-section{
     display: block;

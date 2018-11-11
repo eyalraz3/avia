@@ -7,7 +7,11 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+function imagezoom(a) {
+    var n=document.getElementById(a);
+    n.width=n.width*1.5;
 
+}
 function getQueryVariable(variable)
 {
     var query = window.location.search.substring(1);
