@@ -12,6 +12,9 @@
         <link rel="stylesheet" type="text/css" href="main.css" />
         <link rel="stylesheet" type="text/css" href="product.css" />
         <script src="product.js"></script>
+        <link rel="stylesheet" href="lib/drift-master/dist/drift-basic.css">
+        <script src="lib/drift-master/dist/Drift.js"></script>
+
     </head>
     <body dir="rtl">
        
@@ -27,13 +30,28 @@
         </div>
 </article>
 
-            
-            
-            
-        </div>
-       
-       
-      
-        
+<img class="drift-demo-trigger"
+
+     data-zoom="img/nm1.jpg"
+
+     src="img/nm1.jpg"
+
+>
+<div class="detail">
+
+</div>
+
+<script>
+    Drift(do
+        paneContainer: document.querySelector('.detail'),
+    inlinePane: 900,
+    inlineOffsetY: -85,
+    containInline: true
+    });
+
+</script>
+
+
+
     </body>
 </html>
