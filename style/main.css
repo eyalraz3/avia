@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 11/10/2018, 16:16:02
     Author     : Eyal Raz
 */
-
+@import "navbar.css";
 
 :root{
    --nav-width:20%;
@@ -19,6 +19,7 @@ and open the template in the editor.
 *{
     font-family: tahoma; 
     box-sizing: border-box;
+
     
 }
 
@@ -51,28 +52,7 @@ header{
     margin-bottom:0;
 
 }
-#search{
-position: relative;
-background-color: inherit;
 
-
-
-}
-#search-button{
-background-color: inherit;
-    padding: 0;
-    border: 0;
-}
-#search-img{
-    height: 30px;
-    vertical-align: middle;
-
-}
-#search-input{
-    height: 40px;
-    background-color: transparent;
-    border: 0;
-}
 .fb-like{
     position: relative;
     display: inline-block;
@@ -87,110 +67,31 @@ article{
 
 ;
 }
-nav{
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    grid-area: top;
-}
 
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
-
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: right;
-  font-size: 16px;
-  color: var(--color1);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-
-
-
-}
-
-/* The dropdown container */
-.dropdown {
-  float: right;
-  overflow: hidden;
-width: var(--nav-width);
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px; 
-  border: none;
-  outline: none;
-  color: var(--color1);
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-width: 100%;
-}
-
-/* Add a grey background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: var(--color3);
-    color: var(--color2);
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--color3);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;  
-width: var(--nav-width);
-top:100%;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: var(--color2);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: var(--color1);
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-footer#fixed-div{
- position: fixed;
- bottom: 0;
- width: 100%;
- z-index: 2;
-
-}
 #bottom-div{
     width: 100%;
     grid-area: bottom;
     bottom: 0;
     
 }
+
 .fixed-img{
-    height: 100pt;
+    height: 15%;
+    position: fixed;
+    display: block;
+    bottom: 5%;
 }
 #navigate_img{
-  position: absolute;
-  left: 4%;
+  right: 5%;
+}
+#call_img{
+    left: 5%;
+}
+
+@media screen and (min-width: 480px)  {
+    .fixed-img{
+        display: none;
+    }
 }
 
 .iframe-container {

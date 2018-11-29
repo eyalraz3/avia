@@ -5,23 +5,39 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,maximum-scale=1">
-        <link rel="stylesheet" href="product.css">
-        <link rel="script" href="product.js">
+        <link rel="stylesheet" href="style/product.css">
+        <link rel="script" href="script/product.js">
         <title>שם המוצר</title>
         <link rel="stylesheet" media="screen, projection" href="lib/drift/dist/drift-basic.css">
     </head>
 
     <body>
     <div class="wrapper">
-        <img class="drift-demo-trigger" data-zoom="img/nm1.jpg?w=1200&amp;ch=DPR&amp;dpr=2" src="img/nm1.jpg">
+        <img class="drift-demo-trigger" id="des-img" title="תמונת המוצר" data-zoom="img/nm1.jpg?&amp;ch=DPR&amp;dpr=2" src="img/nm1.jpg" >
 
         <div class="detail">
-<header>שם המוצר</header>
-<section> פרטי המוצר ךשלגחכדףךשלחגדףכךלשחגדףכךלשחגדףךכלחשףגדךלחףכךשחףךדלגחףכךלחףשגדךכ</section>
+            <div class="gallery">
 
-            <a href="https://imgix.com/" class="ix-link">
-                <img src="./Drift Playground_files/imgix-presskit.pdf" width="160" height="60" alt="imgix">
-            </a>
+                <img src="img/nm1.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)" onload="picChoose(this)">
+                <img src="img/nm2.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
+                <img src="img/nm3.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
+                <img src="img/nm4.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
+
+
+            </div>
+<section class="product-details">
+    <h1>שם המוצר</h1>
+    <p>
+        פרטי המוצר: השמלה הכי יפה שיש, מושלמת לאירועים וכשמלת ערב
+
+    </p>
+
+
+
+</section>
+
+
+
 
         </div>
     </div>
@@ -37,6 +53,6 @@
         });
     </script>
 
-
+<script src="script/product.js"></script>
     </body>
 </html>

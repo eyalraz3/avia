@@ -31,3 +31,15 @@ function putSrcTo(desID) {
 
     }
 }
+function picChoose(picElement){
+    var des=document.getElementById("des-img") ;
+    des.setAttribute('src',picElement.src);
+    des.setAttribute('data-zoom',picElement.src+'?&amp;ch=DPR&amp;dpr=2');
+    var par=picElement.parentElement;
+    var pics=par.children;
+    for(var i=0;i<pics.length;i++) {
+        pics[i].classList.remove('chosen-pic');
+
+    }
+    picElement.classList.add('chosen-pic');
+}
