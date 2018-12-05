@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 
 <html >
-    
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,maximum-scale=1">
-        <link rel="stylesheet" href="style/product.css">
-        <link rel="script" href="script/product.js">
-        <title>שם המוצר</title>
-        <link rel="stylesheet" media="screen, projection" href="lib/drift/dist/drift-basic.css">
-    </head>
 
-    <body>
-    <div class="wrapper">
-        <img class="drift-demo-trigger" id="des-img" title="תמונת המוצר" data-zoom="img/nm1.jpg?&amp;ch=DPR&amp;dpr=2" src="img/nm1.jpg" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="style/product.css">
+    <link rel="script" href="script/product.js">
+    <title>שם המוצר</title>
+    <link rel="stylesheet" media="screen, projection" href="lib/drift/dist/drift-basic.css">
+</head>
 
-        <div class="detail">
-            <div class="gallery">
+<body>
+<div class="wrapper">
+    <img class="drift-demo-trigger" id="des-img" alt='שם המוצר' title="תמונת המוצר" data-zoom="img/nm1.jpg?&amp;ch=DPR&amp;dpr=2" src="img/nm1.jpg" >
 
-                <img src="img/nm1.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)" onload="picChoose(this)">
-                <img src="img/nm2.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
-                <img src="img/nm3.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
-                <img src="img/nm4.jpg" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
+    <div class="detail">
+        <div class="gallery">
 
-
-            </div>
-<section class="product-details">
-    <h1>שם המוצר</h1>
-    <p>
-        פרטי המוצר: השמלה הכי יפה שיש, מושלמת לאירועים וכשמלת ערב
-
-    </p>
-
-
-
-</section>
-
-
+            <img src="img/nm1.jpg" alt="שם המוצר" title="לחץ להגדלה" class="gal-pic chosen-pic" onclick="picChoose(this)"/>
+            <img src="img/nm2.jpg" alt="שם המוצר" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
+            <img src="img/nm3.jpg" alt="שם המוצר" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
+            <img src="img/nm4.jpg" alt="שם המוצר" title="לחץ להגדלה" class="gal-pic" onclick="picChoose(this)"/>
 
 
         </div>
-    </div>
+        <section class="product-details">
+            <h1>שם המוצר</h1>
+            <p>
+                פרטי המוצר: השמלה הכי יפה שיש, מושלמת לאירועים וכשמלת ערב
 
-    <script src="lib/drift/dist/Drift.js"></script>
-    <script>
-        new Drift(document.querySelector('.drift-demo-trigger'), {
-            paneContainer: document.querySelector('.detail'),
-            inlinePane: 900,
-            inlineOffsetY: -85,
-            containInline: true,
-            hoverBoundingBox: true
-        });
-    </script>
+            </p>
+
+            <form method="get" action="form.php">
+                <div class="product-properties">
+                    <span>מידה:</span>
+                    <input type="radio" value="XS" name="size" id="XS" class="radio">
+                    <label for="XS" class="chooseable-label">XS</label>
+                    <input type="radio" value="S" name="size" id="S" class="radio" checked>
+                    <label for="S" class="chooseable-label">S</label>
+                    <input type="radio" value="M" name="size" id="M" class="radio">
+                    <label for="M" class="chooseable-label">M</label>
+                    <input type="radio" value="L" name="size" id="L" class="radio">
+                    <label for="L" class="chooseable-label">L</label>
+                    <input type="radio" value="XL" name="size" id="XL" class="radio">
+                    <label for="XL" class="chooseable-label">XL</label>
+
+
+                </div>
+                <hr>
+                <div class="product-properties">
+                    <span>צבע:</span>
+                    <input type="radio" value="red" name="color" id="red" class="radio" checked>
+                    <label for="red" class="chooseable-label"></label>
+                    <input type="radio" value="blue" name="color" id="blue" class="radio">
+                    <label for="blue" class="chooseable-label"></label>
+                    <input type="radio" value="green" name="color" id="green" class="radio">
+                    <label for="green" class="chooseable-label"></label>
+                    <input type="radio" value="purple" name="color" id="purple" class="radio">
+                    <label for="purple" class="chooseable-label"></label>
+                    <input type="radio" value="yellow" name="color" id="yellow" class="radio">
+                    <label for="yellow" class="chooseable-label"></label>
+
+
+
+
+                </div>
+                <hr>
+                <div class="product-properties">
+                    <label for="qty">כמות:</label>
+                    <select name="quantity" autocomplete="off" id="qty"  class="">
+                        <option value="1" selected="">1
+                        </option>
+                        <option value="2">2
+                        </option>
+                        <option value="3">3
+                        </option>
+                        <option value="4">4
+                        </option>
+                    </select>
+                </div>
+
+                <hr>
+                <input type="submit" value="הזמנה">
+            </form>
+
+        </section>
+
+
+
+
+    </div>
+</div>
+
+<script src="lib/drift/dist/Drift.js"></script>
+<script>
+    new Drift(document.querySelector('.drift-demo-trigger'), {
+        paneContainer: document.querySelector('.detail'),
+        inlinePane: 900,
+        inlineOffsetY: -85,
+        containInline: true,
+        hoverBoundingBox: true
+    });
+</script>
 
 <script src="script/product.js"></script>
-    </body>
+</body>
 </html>

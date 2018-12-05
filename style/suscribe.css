@@ -1,0 +1,34 @@
+
+.subscribe-mail{
+    border: 0;
+    background: #4e4e4e;
+    font-size: 16px;
+    padding: 12px 21px 12px;
+    height: 48px;
+    margin: 0 0 8px;
+    font-family: alefregular, sans-serif;
+    color: white;
+    -webkit-appearance: none;
+    border-radius: 0;
+    float: right;
+    width: 70%;
+    display: block;
+}
+.button{
+    background: var(--color2);
+    border: 1px solid white;
+    color: var(--color1);
+    padding: 15px 21px 12px;
+    margin: 0 0 8px;
+    font-size: 16px;
+    float: right;
+}
+.newsletter-form{
+    margin-top: 15px;
+
+}
+label[for=newsletter]{
+    float: right;
+    color: var(--color1);
+    margin: 4px;
+}

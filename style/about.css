@@ -13,7 +13,8 @@ display: inline;
     z-index: 1;
     position: absolute;
 }
-.facebook-logo{
-    width: 10%;
-
+.txt-span{
+    text-shadow: -2px 1px 1px #999;
+    display: inline-block;
+    text-align: center;
 }

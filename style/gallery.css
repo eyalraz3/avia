@@ -1,0 +1,186 @@
+@import "main.css";
+.single-product{
+    width: 30%;
+    display: inline-block;
+    border: var(--color3) 5px solid;
+    padding: 15px;
+    font-size: 14pt;
+    float: right;
+    margin: 1%;
+}
+.product-img{
+    width: 100%;
+}
+.description{
+
+    color: var(--color2);
+
+}
+.price{
+    color: rgba(96,124,112,0.8);
+
+}
+.product-anchor{
+    text-decoration: none;
+}
+.page-links{
+    text-decoration: none;
+    color: var(--color3);
+    border: var(--color3) 5px double;
+
+
+}
+.page-numbers{
+    bottom: 2%;
+    left: 15%;
+    position: absolute;
+}
+.products{
+    width: 70%;
+
+}
+aside{
+    width: 28%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    float: right;
+    height: 100%;
+    direction: rtl;
+    margin-right: 10px;
+
+}
+.side-item{
+
+}
+.side-item::before{
+    content: '◀';
+    color: #23637f;
+    font-weight: bolder;
+    font-family: cursive;
+    display: inline-block;
+    transition: cubic-bezier(0.54, 0, 0.42, 0.99) 0.4s;
+
+
+}
+.side-item-open::before{
+    transform: rotateZ(-90deg);
+
+}
+div.show{
+    height: 100px;
+}
+
+
+.sub-content{
+    transition: all 0.4s ease-in;
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"]{/* Hide the browser's default checkbox */
+
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+input:checked + label{
+    background-color: rgba(95, 98, 98, 0.36);
+
+    border:  black 5px double;
+
+}
+label{
+    border: var(--color3) 5px double;
+    color: black;
+    display: inline-block;
+    background-color: var(--color1);
+    min-width: 34px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+}
+input[name=color] + label{
+    background-color: transparent;
+    size:   10px 10px;
+    height: 34px;
+    display: inline-block;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25%;
+    top: 0;
+
+}
+input[name=color]:checked + label{
+    background-color: inherit;
+    border-width: 5px;
+    border-style: solid;
+    color: var(--color1);
+}
+
+input[name=color]:checked + label::after{
+    color: var(--color1);
+}
+input[name=color] + label::after{
+    content: 'V';
+    font-family: cursive;
+    color: transparent;
+    background-color: transparent;
+}
+
+#green + label{
+    border-color: green;
+}
+#green:checked + label{
+    background-color: green;
+}
+
+#red + label{
+    border-color: red;
+}
+#red:checked + label{
+    background-color: red;
+}
+#purple + label{
+    border-color: purple;
+}
+#purple:checked + label{
+    background-color: purple;
+}
+#yellow + label{
+    border-color: yellow;
+}
+#yellow:checked + label{
+    background-color: yellow;
+}
+#blue + label{
+    border-color: blue;
+}
+#blue:checked + label{
+    background-color: blue;
+}
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    font-size: 18pt;
+}
+input[type=submit]:hover {
+    background:gray;
+
+}
+input:focus + label{
+    box-shadow: 0 0px 23px grey;
+}
+b[onclick]{
+    cursor: pointer;
+}
+

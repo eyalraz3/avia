@@ -84,25 +84,3 @@ nav{
     display: block;
 }
 
-#search{
-    position: relative;
-    background-color: inherit;
-
-
-
-}
-#search-button{
-    background-color: inherit;
-    padding: 0;
-    border: 0;
-}
-#search-img{
-    height: 30px;
-    vertical-align: middle;
-
-}
-#search-input{
-    height: 40px;
-    background-color: transparent;
-    border: 0;
-}

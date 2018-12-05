@@ -1,3 +1,6 @@
+@import "product-form.css";
+@import "main.css";
+
 #frame_content{
     position: relative;
     width: 100%;
@@ -135,3 +138,4 @@ a {
         display: none;
     }
 }
+

@@ -8,25 +8,34 @@ and open the template in the editor.
     Author     : Eyal Raz
 */
 @import "navbar.css";
+@import 'iframe.css';
+@import "suscribe.css";
+@import "facebook.css";
+@import "bottom-div.css";
+@import "main-top.css";
 
 :root{
-   --nav-width:20%;
+    --nav-width:25%;
     --color1:white;
     --color2:black;
     --color3:gray;
-} 
-
-*{
-    font-family: tahoma; 
-    box-sizing: border-box;
-
-    
 }
 
+*{
+    font-family: tahoma;
+    box-sizing: border-box;
+
+
+}
+:focus {
+    outline-color:var(--color3) ;
+    border-width: 2px;
+    border-color: var(--color3);
+    box-shadow: 0 0 10px var(--color3);
+}
 ::selection{
     background-color: #a9a0eb;
 }
-
 
 
 
@@ -39,41 +48,18 @@ body{
 
 
 }
-#logo{
-    height: 200px;
-    display: inline-block;
-    border:0;
-    grid-area: logo;
-}
-header{
-    position: relative;
-    height: 10%;
-    margin-top: 1%;
-    margin-bottom:0;
 
-}
 
-.fb-like{
-    position: relative;
-    display: inline-block;
-
-}
 article{
     display: grid;
     z-index: 3;
     grid-template-areas:
-"1"
-    "2"
+            "1"
+            "2"
 
 ;
 }
 
-#bottom-div{
-    width: 100%;
-    grid-area: bottom;
-    bottom: 0;
-    
-}
 
 .fixed-img{
     height: 15%;
@@ -82,7 +68,7 @@ article{
     bottom: 5%;
 }
 #navigate_img{
-  right: 5%;
+    right: 5%;
 }
 #call_img{
     left: 5%;
@@ -94,33 +80,13 @@ article{
     }
 }
 
-.iframe-container {
-  overflow: hidden;
-  position: relative;
-  top: 0;
-  height: 100%;
 
+
+.main-article{
+    overflow-x: hidden;
 }
 
- iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: relative;
-   top: 0;
-   width: 100%;
-     grid-area: frame;
-     overflow-x: hidden;
 
- }
-
- .main-article{
-     overflow-x: hidden;
- }
-/* 4x3 Aspect Ratio */
-.iframe-container-4x3 {
-  padding-top: 75%;
-}
 .main-section{
     position: relative;
     display:grid;
@@ -128,89 +94,15 @@ article{
     width: 100%;
     grid-gap: 0;
     grid-template-areas:
-    "toper toper toper toper logo"
-    "top top top top top"
-    "frame frame frame frame frame"
-    "footer footer footer footer footer"
-    "bottom bottom bottom bottom bottom "
+            "header header header header header"
+            "top top top top top"
+            "frame frame frame frame frame"
+            "footer footer footer footer footer"
+            "bottom bottom bottom bottom bottom "
 
 ;
-    grid-template-rows: auto auto 2000px auto;
+    grid-template-rows: auto auto auto auto;
 
 }
 
-footer#bottom-div{
-    grid-area: bottom;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-areas:
-"bottom1 bottom2 bottom3"
 
-;
-}
-
-.bottom-divs{
-    background-color: var(--color2);
-    text-align: center;
-}
-.bottom-div1{
-grid-area: bottom1;
-}
-.bottom-div2{
-    grid-area: bottom2;
-
-}
-.bottom-div3{
-    grid-area: bottom3;
-
-}
-ul{
-    list-style-type: none;
-    line-height: 1.5;
-}
-li a{
-    margin: 13px;
-    position: relative;
-}
-li a:link,li a:visited{
-  color: var(--color1);
-   background-color: transparent;
-    font-size: 12pt;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-}
-li a:hover,li a:active{
-    background-color: var(--color3);
-    transition: all ease-in 0.2s;
-}
-.subscribe-mail{
-    border: 0;
-    background: #4e4e4e;
-    font-size: 16px;
-    padding: 12px 21px 12px;
-    height: 48px;
-    margin: 0 0 8px;
-    font-family: alefregular, sans-serif;
-    color: white;
-    -webkit-appearance: none;
-    border-radius: 0;
-    float: right;
-    width: 70%;
-    display: block;
-}
-.button{
-    background: var(--color2);
-    border: 1px solid white;
-    color: var(--color1);
-    padding: 15px 21px 12px;
-    margin: 0 0 8px;
-    font-size: 16px;
-    float: right;
-}
-.newsletter-form{
-    margin-top: 15px;
-
-}

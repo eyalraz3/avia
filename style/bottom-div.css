@@ -1,0 +1,54 @@
+footer#bottom-div{
+    grid-area: bottom;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+            "bottom1 bottom2 bottom3"
+
+;
+}
+
+#bottom-div{
+    width: 100%;
+    grid-area: bottom;
+    bottom: 0;
+
+}
+
+.bottom-divs{
+    background-color: var(--color2);
+    text-align: center;
+}
+.bottom-div1{
+    grid-area: bottom1;
+}
+.bottom-div2{
+    grid-area: bottom2;
+
+}
+.bottom-div3{
+    grid-area: bottom3;
+
+}
+ul{
+    list-style-type: none;
+    line-height: 1.5;
+}
+li a{
+    margin: 13px;
+    position: relative;
+}
+li a:hover,li a:active{
+    background-color: var(--color3);
+    transition: all ease-in 0.2s;
+}
+li a{
+    color: var(--color1);
+    background-color: transparent;
+    font-size: 12pt;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}

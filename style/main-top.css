@@ -1,0 +1,47 @@
+#logo{
+    height: 160px;
+    display: inline-block;
+    border:0;
+
+}
+.cart{
+    left: 2%;
+    height: 53px;
+    top: 300%;
+    position: absolute;
+}
+header{
+    position: relative;
+    height: 10%;
+    margin-top: 1%;
+    margin-bottom:0;
+    grid-area: header;
+
+}
+#search{
+    bottom: 41%;
+    width: 25%;
+    display: inline-block;
+    right: 15%;
+    border-bottom: 2px var(--color2) solid;
+    position: relative;
+
+
+}
+#search-button{
+    background-color: inherit;
+    padding: 0;
+    border: 0;
+}
+#search-img{
+    height: 30px;
+    vertical-align: middle;
+
+}
+#search-input{
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+    width: 85%;
+    font-size: 16pt;
+}

@@ -1,0 +1,61 @@
+@import "main.css";
+header{
+direction: rtl;
+    font-size: 40px;
+    margin: 10px;
+
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, input[type=email] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border-width: 2px;
+    border-color:  var(--color2);
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-width: 2px;
+    border-color:  var(--color2);
+    font-weight: bold;
+
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: var(--color3);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: var(--color1);
+    padding: 20px;
+}
+form{
+    direction: rtl;
+}
+
+.required::before{
+    content: "*";
+    color: red;
+    size: 200pt;
+    font-family: cursive;
+}
+input:focus,textarea:focus {
+    outline: none; !important;
+    border-color: var(--color3);
+    box-shadow: 0 0 10px var(--color3);
+}

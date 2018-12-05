@@ -1,0 +1,26 @@
+.iframe-container-4x3 {/* 4x3 Aspect Ratio */
+    padding-top: 75%;
+}
+#frame-container{
+    width: 100%;
+    grid-area: frame;
+}
+.iframe-container {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    height: 100%;
+
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    grid-area: frame;
+    overflow-x: hidden;
+
+}
