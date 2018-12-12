@@ -22,7 +22,7 @@
 </div>
 <section class="main-section">
     <header>
-        <a target="main-frame" href="index.html"><img   alt= "Logo" src="img/logo.jpg"  height="150" title="אביה בגדי מעצבים" id="logo"></a>
+        <a target="main-frame" href="winter.html"><img   alt= "Logo" src="img/logo.jpg"  height="150" title="אביה בגדי מעצבים" id="logo"></a>
         <div id="search" class="">
             <form  method="get">
                 <button id="search-button" type="submit">  <img src="img/search.png" alt="search" title="חפש" id="search-img"/> </button>
@@ -37,7 +37,7 @@
     <nav>
         <div class="navbar">
             <div class="dropdown">
-                <a  target="main-frame" href="index.html" class="dropbtn"> דף הבית
+                <a  target="main-frame" href="winter.html" class="dropbtn"> דף הבית
                 </a>
             </div>
             <div class="dropdown">
@@ -69,8 +69,15 @@
 
         </div>
     </nav>
+
+
     <div id="frame-container">
-        <iframe name="main-frame" src=index.html id="main_frame" onload="setHeight(this)"></iframe>
+        <?php
+        require 'winter.html'
+        ?>
+        <!--
+
+        <iframe name="main-frame" src=winter.html id="main_frame" onload="setHeight(this)"></iframe>-->
     </div>
     <a href="tel:+97254-7493523">
         <img id="call_img" src="img/call.png" alt="התקשר" title="התקשר אלינו" class="fixed-img"/>
@@ -82,7 +89,7 @@
     <footer id="bottom-div">
         <div class="bottom-divs" id="bottom-div1">
             <ul>
-                <li><a href="index.html#" target="main-frame"> דף הבית</a></li>
+                <li><a href="winter.html#" target="main-frame"> דף הבית</a></li>
                 <li><a href="about.html#" target="main-frame"> אודות</a></li>
                 <li><a href="https://www.facebook.com/aviafashion/" target="_blank"> דף הפייסבוק שלנו</a></li>
 

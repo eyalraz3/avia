@@ -1,4 +1,5 @@
 
+
 (function(d, s, id) {//facebook like button
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -19,4 +20,15 @@ function picChoose(picElement){
 
     }
     picElement.classList.add('chosen-pic');
+}
+function driftProduct(document) {
+
+
+new Drift(document.querySelector('.drift-demo-trigger'), {
+    paneContainer: document.querySelector('.detail'),
+    inlinePane: 900,
+    inlineOffsetY: -85,
+    containInline: true,
+    hoverBoundingBox: true
+});
 }
