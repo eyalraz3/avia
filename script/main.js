@@ -33,3 +33,6 @@ function facebookRoot(d, s, id) {//some facebook code
     document.querySelector('#frame-container').style.height=(height+5)+"px";
 
 }
+function unHide(facebookDiv) {
+    facebookDiv.classList.add('loaded');
+}

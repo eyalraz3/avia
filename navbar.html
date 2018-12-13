@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>navbar</title>
+    <link rel="stylesheet" href="style/navbar.css"/>
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <div class="dropdown">
+            <a  target="main-frame" href="winter.html" class="dropbtn"> דף הבית
+            </a>
+        </div>
+        <div class="dropdown">
+            <a  href="gallery.html" target="main-frame" class="dropbtn" onload="setHeight(document.querySelector('#main_frame'));"> מוצרים
+            </a>
+
+            <div class="dropdown-content">
+                <a target="main-frame" href="product.html" onclick="setHeight(document.querySelector('#main_frame'));">בגדי מעצבים</a>
+                <a target="main-frame" href="product.html">מטפחות</a>
+                <a target="main-frame" href="product.html">בגדי בסיס</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a target="main-frame" href="http://www.ynet.co.il" class="dropbtn">אקססוריז
+            </a>
+            <div class="dropdown-content">
+                <a target="main-frame" href="product.html">כיסויי ראש</a>
+                <a target="main-frame" href="product.html">ביגוד נוסף</a>
+                <a target="main-frame" href="product.html">תכשיטים</a>
+            </div>
+
+        </div>
+        <div class="dropdown">
+            <a target="main-frame" href="about.html" class="dropbtn">אודות
+
+            </a>
+
+        </div>
+
+    </div>
+</nav>
+
+</body>
+</html>

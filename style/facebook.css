@@ -8,7 +8,7 @@
 .facebook-div{
     height: 13%;
     z-index: 10;
-    left: -340px;
+    left: -440px;
     position: fixed;
     top: 60%;
     transition: ease-in 1s 1s;
@@ -17,6 +17,7 @@
     border-style: solid;
     background: #3b5998;
     overflow: visible;
+
 }
 .fb-page{
     top: -400%;
@@ -24,6 +25,10 @@
 .facebook-div:hover{
     left: 0;
     transition: ease-in-out 0.5s 0.5s;
-
+}
+.facebook-div .loaded{
+    left: -340px;
+}
+.facebook-div:required{
 
 }
